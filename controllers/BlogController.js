@@ -58,15 +58,8 @@ export const updateBlog = async (req, res) => {
         "UPDATE blogs SET title = IFNULL(?, title), categoria = IFNULL(?, categoria), content = IFNULL(?, content) WHERE id = ?",
         [title, categoria, content, id]
       );
-  
-      if (result.affectedRows === 0)
-        return res.status(404).json({ message: "blogs not found" });
-  
-      const [rows] = await pool.query("SELECT * FROM database_app WHERE id = ?", [
-        id,
-      ]);
-  
-      res.json(rows[0]);
+    
+      res.status(200).json({message: "Cambios Exitosos"})
     } catch (error) {
       return res.status(500).json({ message: "Something goes wrong" });
     }
