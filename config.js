@@ -9,9 +9,9 @@ config()
 // export const DB_PASSWORD = process.env.DB_PASSWORD || ''
 // export const DB_DATABASE = process.env.DB_DATABASE || 'database_app'
 
-//export const PORT = process.env.PORT || 8000
-//export const DB_HOST = process.env.DB_HOST || 'mysql-toro.alwaysdata.net'
-//export const DB_PORT = process.env.DB_POST || 3306
-//export const DB_USER = process.env.DB_USER || 'toro'
-//export const DB_PASSWORD = process.env.DB_PASSWORD || '#Torodata93'
-//export const DB_DATABASE = process.env.DB_DATABASE || 'toro_database_app'
+export const PORT = process.env.PORT || 8000
+export const DB_HOST = process.env.DB_HOST || 'mysql-toro.alwaysdata.net'
+export const DB_PORT = process.env.DB_POST || 3306
+export const DB_USER = process.env.DB_USER || 'toro'
+export const DB_PASSWORD = process.env.DB_PASSWORD || '#Torodata93'
+export const DB_DATABASE = process.env.DB_DATABASE || 'toro_database_app'
